@@ -76,8 +76,8 @@ Here is an example of a traffic sign image before and after histogram processing
 
 ![Before and after histogram processing on grayscale](images/gray_histogram.jpg)
 
-I also ran the images through a gaussian sharpening function to make the features stand out more.
-Here is an example of a traffic sign image before and after full preprocessing of grayscale image which includes the sharpening of the image.
+I also ran the images through a gaussian smoothing function to even the features out more.
+Here is an example of a traffic sign image before and after full preprocessing of grayscale image which includes the smoothing of the image.
 
 ![Before and after full processing on grayscale](images/gray_preProcessed.jpg)
 
@@ -100,15 +100,15 @@ My final model consisted of the following layers:
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x1 grayscale image   							| 
 | Convolution 9x9     	| 1x1 stride, valid padding, outputs 24x24x6 	|
-| ELU			 		|												|
+| ELU			 		|	Activation											|
 | Max pooling	      	| 2x2 stride,  outputs 12x12x6 				|
 | Convolution 5x5	   | 1x1 stride, valid padding, outputs 8x8x16    |
-| RELU6	 		|										|
+| RELU6	 		|	Activation									|
 | Max pooling	      	| 2x2 stride,  outputs 4x4x16 				|
 | Fully connected		| Input 256, outputs 120        									|
-| Sigmoid				|         									|
+| Sigmoid				| Activation        									|
 | Fully connected		| Input 120, outputs 84        									|
-| RELU						|												|
+| RELU						|	Activation											|
 |	Dropout					| 75%											|
 | Output		| Input 84, outputs 43        									|
  
@@ -116,9 +116,9 @@ My final model consisted of the following layers:
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
+The code for training the model is located in the eleventh cell of the ipython notebook. 
 
-To train the model, I used an ....
+To train the model, I used an AdamOptimizer, batch size of 300, and number of epochs of 20.
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
