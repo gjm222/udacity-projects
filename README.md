@@ -1,2 +1,2 @@
 # udacity-projects
-![test](images/kiku.jpg)
+![kiku](images/Kiku.jpg)
