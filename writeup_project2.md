@@ -44,7 +44,7 @@ You're reading it! and here is a link to my [project code](https://github.com/ud
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
-I used the pandas library to calculate summary statistics of the traffic
+I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
 * The size of training set is 34799
@@ -56,9 +56,9 @@ signs data set:
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed for each class
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed for each class:
 
-![barchart][images/barchart.jpg]
+![Distributions](images/barchart.jpg)
 
 ###Design and Test a Model Architecture
 
