@@ -36,7 +36,7 @@ The goals / steps of this project are the following:
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/gjm222/udacity-projects/udacity-projects/writeup_project2.md )
+You're reading it! and here is a link to my [project code](https://github.com/gjm222/udacity-projects/blob/master/writeup_project2.md)
 
 ###Data Set Summary & Exploration
 
@@ -186,59 +186,59 @@ Here are the results of the prediction:
 | Stop Sign      		| Stop sign   									| 
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 89.8%.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a 20 km/h sign (probability of 0.13 vs 0.09 of the next sign), which is the correct choice. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			|  20 km/h  									| 
-| .20     				|  Keep right											|
-| .05					|Slippery Road 										|
-| .04	      			| Wild Animal Crossing					 				|
-| .01				    | Stop sign   							|
+| .13         			|  20 km/h  									| 
+| .09     				|  No passing							|
+| .07					| 30 km/h 										|
+| .06	      			| Roundabout mandatory					 				|
+| .05				     | 100 km/h   							|
 
 
-For the second image ... 
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			|  20 km/h  									| 
-| .20     				|  Keep right											|
-| .05					|Slippery Road 										|
-| .04	      			| Wild Animal Crossing					 				|
-| .01				    | Stop sign   							|
-
-For the third image ... 
+For the second image, the model is relativley sure that this is a 20 km/h sign (probability of 0.10 vs 0.07 of the next sign), which is the correct choice. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			|  20 km/h  									| 
-| .20     				|  Keep right											|
-| .05					|Slippery Road 										|
-| .04	      			| Wild Animal Crossing					 				|
-| .01				    | Stop sign   							|
+| .10     				|  Keep right											|
+| .07         			|  Dangerous curve to the right  									| 
+| .07					| Turn left ahead 										|
+| .04	      			| Slippery road				 				|
+| .04				    | Road work   							|
 
-For the fourth image ... 
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			|  20 km/h  									| 
-| .20     				|  Keep right											|
-| .05					|Slippery Road 										|
-| .04	      			| Wild Animal Crossing					 				|
-| .01				    | Stop sign   							|
-
-For the fifth image ... 
+For the third image, the model is relatively sure that this is a slippery road sign (probability of 0.10 vs 0.07 of the next sign), which is the correct choice. The top five soft max probabilities were: 
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			|  20 km/h  									| 
-| .20     				|  Keep right											|
-| .05					|Slippery Road 										|
-| .04	      			| Wild Animal Crossing					 				|
-| .01				    | Stop sign   							|
+| .10					|Slippery Road 										|
+| .07         			| Dangerous curve to the right  								| 
+| .05     				|  Bicycles crossing										|
+| .04	      			| Beware of ice/snow				 				|
+| .04				    | 60km/h   							|
+
+For the fourth image, the model is relatively sure that this is a wild animals crossing sign (probability of 0.11 vs 0.06 of the next sign), which is the correct choice. The top five soft max probabilities were: 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .11         			| Wild animals crossing 									| 
+| .06     				| Dangerous curve to the left										|
+| .06					| Road work 										|
+| .05	      			| Slippery road				 				|
+| .05				    | Bicycles crossing   							|
+
+For the fifth image, the model is relatively sure that this is a stop sign sign (probability of 0.11 vs 0.06 of the next sign), which is the correct choice. The top five soft max probabilities were:  
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .10         			| Stop sign 									| 
+| .04     				| No entry										|
+| .04					| Go straight or left									|
+| .04	      			| No vehicles				 				|
+| .04				    | Keep right						|
