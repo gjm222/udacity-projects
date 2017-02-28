@@ -74,11 +74,11 @@ Here is an example of a traffic sign image before and after grayscaling and hist
 
 Here is an example of a traffic sign image before and after histogram processing on grayscale.
 
-![Before and after histogram processing on grayscale](images/gray_hist.jpg)
+![Before and after histogram processing on grayscale](images/gray_histogram.jpg)
 
 Here is an example of a traffic sign image before and after histogram processing on grayscale.
 
-![Before and after full processing on grayscale](images/gray_preProcess.jpg)
+![Before and after full processing on grayscale](images/gray_preProcessed.jpg)
 
 As a last step, I normalized the image data because ...
 
