@@ -233,7 +233,7 @@ For the fourth image, the model is relatively sure that this is a wild animals c
 | .05	      			| Slippery road				 				|
 | .05				    | Bicycles crossing   							|
 
-For the fifth image, the model is relatively sure that this is a stop sign sign (probability of 0.11 vs 0.06 of the next sign), which is the correct choice. The top five soft max probabilities were:  
+For the fifth image, the model is relatively sure that this is a stop sign sign (probability of 0.10 vs 0.04 of the next sign), which is the correct choice. The top five soft max probabilities were:  
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
