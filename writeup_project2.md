@@ -105,11 +105,12 @@ My final model consisted of the following layers:
 | Convolution 5x5	   | 1x1 stride, valid padding, outputs 8x8x16    |
 | RELU6	 		|										|
 | Max pooling	      	| 2x2 stride,  outputs 4x4x16 				|
-| Fully connected		| Input 256, outputs 84        									|
-| Softmax				| etc.        									|
+| Fully connected		| Input 256, outputs 120        									|
+| Sigmoid				|         									|
+| Fully connected		| Input 120, outputs 84        									|
 | RELU						|												|
 |	Dropout					| 75%											|
-| Fully connected		| Input 84, outputs 10        									|
+| Output		| Input 84, outputs 43        									|
  
 
 
