@@ -158,8 +158,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text](images/00038/00000_00010.jpg) ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![ ](images/00000/00000_00010.jpg) ![ ](images/00014/00000_00010.jpg) ![ ](images/00023/00000_00010.jpg) 
+![ ](images/00031/00000_00010.jpg) ![ ](images/00038/00000_00010.jpg)
 
 The first image might be difficult to classify because ...
 
