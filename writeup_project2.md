@@ -161,7 +161,15 @@ Here are five German traffic signs that I found on the web:
 ![ ](images/00000/00000_00010.jpg) ![ ](images/00014/00000_00010.jpg) ![ ](images/00023/00000_00010.jpg) 
 ![ ](images/00031/00000_00010.jpg) ![ ](images/00038/00000_00010.jpg)
 
-The first image might be difficult to classify because ...
+The first image might be difficult to classify because it looks like many other circled numbered signs. It also has a piece of another sign above it.
+
+The second image might be difficult to classify because it looks like many other circled signs especially since color is not used to learn these images.
+
+The third and fourth images might be difficult to classify because it they look so much a like in every way.
+
+The last images may not be difficult to classify but is extremely important to get correct.
+
+
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -171,11 +179,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
+| 20 km/h     			| 20 km/h 										|
+| Keep right					| Keep right											|
 | Slippery Road			| Slippery Road      							|
+| Wild Animal Crossing | Wild Animal Crossing	|
+| Stop Sign      		| Stop sign   									| 
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
@@ -188,11 +196,49 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .60         			|  20 km/h  									| 
+| .20     				|  Keep right											|
+| .05					|Slippery Road 										|
+| .04	      			| Wild Animal Crossing					 				|
+| .01				    | Stop sign   							|
 
 
 For the second image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .60         			|  20 km/h  									| 
+| .20     				|  Keep right											|
+| .05					|Slippery Road 										|
+| .04	      			| Wild Animal Crossing					 				|
+| .01				    | Stop sign   							|
+
+For the third image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .60         			|  20 km/h  									| 
+| .20     				|  Keep right											|
+| .05					|Slippery Road 										|
+| .04	      			| Wild Animal Crossing					 				|
+| .01				    | Stop sign   							|
+
+For the fourth image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .60         			|  20 km/h  									| 
+| .20     				|  Keep right											|
+| .05					|Slippery Road 										|
+| .04	      			| Wild Animal Crossing					 				|
+| .01				    | Stop sign   							|
+
+For the fifth image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .60         			|  20 km/h  									| 
+| .20     				|  Keep right											|
+| .05					|Slippery Road 										|
+| .04	      			| Wild Animal Crossing					 				|
+| .01				    | Stop sign   							|
