@@ -48,15 +48,15 @@ I used the pandas library to calculate summary statistics of the traffic
 signs data set:
 
 * The size of training set is 34799
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of test set is 12630
+* The shape of a traffic sign image is (32, 32, 3)
+* The number of unique classes/labels in the data set is 43
 
 ####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed for each class
 
 ![alt text][image1]
 
