@@ -190,7 +190,7 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook. Note that the probabilities are all small because of large negative values in my logits.
 
 For the first image, the model is relatively sure that this is a 20 km/h sign (probability of 0.13 vs 0.09 of the next sign), which is the correct choice. The top five soft max probabilities were:
 
