@@ -66,11 +66,17 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 The code for this step is contained in the fourth code cell of the IPython notebook.
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step, I decided to convert the images to grayscale because it would eliminate color as a training factor and would make it concentrate on shapes, lines, etc.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+Here is an example of a traffic sign image before and after histogram processing on grayscale.
+
+![Before and after histogram processing on grayscale](images/gray_hist.jpg)
+
+Here is an example of a traffic sign image before and after histogram processing on grayscale.
+
+![Before and after full processing on grayscale](images/gray_preProcess.jpg)
 
 As a last step, I normalized the image data because ...
 
