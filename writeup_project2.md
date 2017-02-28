@@ -68,7 +68,9 @@ The code for this step is contained in the fourth code cell of the IPython noteb
 
 As a first step, I decided to convert the images to grayscale because it would eliminate color as a training factor and would make it concentrate on shapes, lines, etc.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an example of a traffic sign image before and after grayscaling and histogram.
+
+![Before and after histogram processing on grayscale](images/color_gray_hist.jpg)
 
 Here is an example of a traffic sign image before and after histogram processing on grayscale.
 
