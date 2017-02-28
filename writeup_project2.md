@@ -125,21 +125,24 @@ To train the model, I used an AdamOptimizer, batch size of 300, and number of ep
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of .982
+* validation set accuracy .922  
+* test set accuracy of .896
 
 If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+* What was the first architecture that was tried and why was it chosen?  The first architecture of a regular LeNet was chosen because it was recomended by the instructor who explained that it was good for signs. 
+* What were some problems with the initial architecture?  The accuracy was around 75-80%.  It seemed to have too simple of activations to fit the data.
+* How was the architecture adjusted and why was it adjusted? I tried a few LeNet structures like using an initial 3x3 filter to initialy capture small features. I also tried an initial 9x9 filter to find that it actually worked better than both the regular LeNet and the 3x3.  I also tried different activations randomly which helped the accuracy a lot.  Along with pooling and dropout to avoid overfitting.  
+* Which parameters were tuned? The batch size to 300 and number of epochs to 20. Changing learning rate did not seem to gain much. Changing the initial randomizing of the weights with a normal distribution of standard deviation of .1 and mean of 0 above or below the current values degraded results.  How were they adjusted and why?  All the parameters were adjusted above and below and exaimined if they improved results.  I admit I adjusted them not expecting it to improve or not.
+* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? The two most important design choices were the grayscaling and normalizing of the image, changing of the activations and the number of epochs.  How might a dropout layer help with creating a successful model?  The dropout kept helped with overfitting and also seemed to keep the learning going.  Before adding dropout, the learning would peak earlier and not learn any more.
 
 If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
+* What architecture was chosen? 
+ * LeNet with a 9x9 initial filter.
+* Why did you believe it would be relevant to the traffic sign application? 
+ * I did because it was recommended by the instructor and we were learning it up to this point.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+ * It showed almost 100% accuracy on the set it trained on and the test and validation results were very close to each other so over and under fitting did not seem to be a problem. 
  
 
 ###Test a Model on New Images
