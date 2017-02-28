@@ -47,7 +47,7 @@ The code for this step is contained in the second code cell of the IPython noteb
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
 
-* The size of training set is ?
+* The size of training set is 34799
 * The size of test set is ?
 * The shape of a traffic sign image is ?
 * The number of unique classes/labels in the data set is ?
