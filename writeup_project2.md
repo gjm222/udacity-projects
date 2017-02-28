@@ -58,7 +58,7 @@ The code for this step is contained in the third code cell of the IPython notebo
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed for each class
 
-![barchart][images/barchart.JPG]
+![barchart][images/barchart.jpg]
 
 ###Design and Test a Model Architecture
 
