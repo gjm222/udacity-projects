@@ -119,9 +119,9 @@ To train the model, I used an AdamOptimizer, batch size of 300, and number of ep
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of .982
-* validation set accuracy .922  
-* test set accuracy of .896
+* training set accuracy of .985
+* validation set accuracy .935  
+* test set accuracy of .899
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?  
@@ -186,53 +186,53 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 19th cell of the Ipython notebook. Note that the probabilities are all small because of large negative values in my logits.
 
-For the first image, the model is relatively sure that this is a 20 km/h sign (probability of 0.13 vs 0.09 of the next sign), which is the correct choice. The top five soft max probabilities were:
+For the first image, the model is not that sure that this is a 20 km/h sign (probability of 0.10 vs 0.08 of the next sign), which is the correct choice. Probably getting confused with the other km/h signs The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .13         			|  20 km/h  									| 
-| .09     				|  No passing							|
-| .07					| 30 km/h 										|
-| .06	      			| Roundabout mandatory					 				|
-| .05				     | 100 km/h   							|
+| .10         			|  20 km/h  									| 
+| .08     				|  30 km/h 						|
+| .06					| 120 km/h 										|
+| .06	      			| 70 km/h				 				|
+| .04				     | Roundabout mandatory   							|
 
 
-For the second image, the model is relativley sure that this is a 20 km/h sign (probability of 0.10 vs 0.07 of the next sign), which is the correct choice. The top five soft max probabilities were:
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .10     				|  Keep right											|
-| .07         			|  Dangerous curve to the right  									| 
-| .07					| Turn left ahead 										|
-| .04	      			| Slippery road				 				|
-| .04				    | Road work   							|
-
-For the third image, the model is relatively sure that this is a slippery road sign (probability of 0.10 vs 0.07 of the next sign), which is the correct choice. The top five soft max probabilities were: 
+For the second image, the model is relativley sure that this is a keep right sign (probability of 0.10 vs 0.04 of the next sign), which is the correct choice. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .10					|Slippery Road 										|
-| .07         			| Dangerous curve to the right  								| 
-| .05     				|  Bicycles crossing										|
-| .04	      			| Beware of ice/snow				 				|
-| .04				    | 60km/h   							|
+| .10     				| Keep right											|
+| .04         			| End of all speed and passing limits  									| 
+| .04					| Turn left ahead 										|
+| .04	      			| Go straight or right				 				|
+| .04				    | No passing for vehicles over 3.5 metric tons   							|
 
-For the fourth image, the model is relatively sure that this is a wild animals crossing sign (probability of 0.11 vs 0.06 of the next sign), which is the correct choice. The top five soft max probabilities were: 
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .11         			| Wild animals crossing 									| 
-| .06     				| Dangerous curve to the left										|
-| .06					| Road work 										|
-| .05	      			| Slippery road				 				|
-| .05				    | Bicycles crossing   							|
-
-For the fifth image, the model is relatively sure that this is a stop sign sign (probability of 0.10 vs 0.04 of the next sign), which is the correct choice. The top five soft max probabilities were:  
+For the third image, the model is not totally sure that this is a slippery road sign (probability of 0.11 vs 0.09 of the next sign), which is the correct choice. The top five soft max probabilities were: 
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .10         			| Stop sign 									| 
-| .04     				| No entry										|
-| .04					| Go straight or left									|
-| .04	      			| No vehicles				 				|
-| .04				    | Keep right						|
+| .11					|Slippery Road 										|
+| .09         			| 50km/h 								| 
+| .05     				|  Beware of ice/snow									|
+| .05	      			| Dangerous curve to the right			 				|
+| .05				    | Road work   							|
+
+For the fourth image, the model is relatively sure that this is a wild animals crossing sign (probability of 0.10 vs 0.06 of the next sign), which is the correct choice. The top five soft max probabilities were: 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .10         			| Wild animals crossing 									| 
+| .06     				| Double curve									|
+| .06					| Dangerous curve to the left						|
+| .05	      			| Bicycles crossing		 				|
+| .05				    | Road work							|
+
+For the fifth image, the model is relatively sure that this is a stop sign sign (probability of 0.09 vs 0.05 of the next sign), which is the correct choice. The top five soft max probabilities were:  
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .09         			| Stop sign 									| 
+| .05     				| Keep right									|
+| .04					| No vehicles				|
+| .04	      			| No entry			 				|
+| .03				    | Bumpy road				|
