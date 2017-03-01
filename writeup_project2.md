@@ -159,7 +159,7 @@ The first image might be difficult to classify because it looks like many other 
 
 The second image might be difficult to classify because it looks like many other circled signs especially since color is not used to learn these images.
 
-The third and fourth images might be difficult to classify because it they look so much a like in every way.
+The third and fourth images might be difficult to classify because it they look so much a like in every way. The fourth image is seems to be very dark which the greyscale and histogram functions should have somewhat corrected.
 
 The last images may not be difficult to classify but is extremely important to get correct.
 
