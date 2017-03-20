@@ -10,6 +10,7 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
+[Loss]:(/images/MSE loss chart.JPG)
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
