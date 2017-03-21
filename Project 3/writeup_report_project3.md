@@ -59,7 +59,7 @@ I tried dropout layers in order to reduce overfitting but it only seemed to make
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 76). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-Looking at the traing vs validation loss the model did not show it was overfitting.
+Looking at the training vs validation loss the model did not show it was overfitting.
 ![Loss](./images/MSELossChart.JPG)
 
 ####3. Model parameter tuning
