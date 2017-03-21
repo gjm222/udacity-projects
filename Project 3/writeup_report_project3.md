@@ -113,7 +113,7 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 
 To get good driving behavior, I used the data.zip data supplied by the class. Looking at the images is appeared to have a few laps of driving clockwise and counter clockwise. Here is an example image of center lane driving:
 
-![alt text][image2]
+![Center](./images/center.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
