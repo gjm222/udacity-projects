@@ -49,19 +49,19 @@ The model.py file contains the code for training and saving the convolution neur
 
 ####1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+My model is based on the "NVDIA" convolution neural network consisting of three 5x5 and two 3x3 filter sizes and depths between 24 and 64 (model.py lines 156-160). Along with fully connected layers of 100, 50, and 10, with an output layer of 1 (model.py lines 162-165). 
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+The data is normalized in the model using a Keras lambda layer (code line 151) and is the top 70 and bottom 25 pixels are cropped to force the model learn the data that is most pertinent.
 
 ####2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+I tried dropout layers in order to reduce overfitting but it only seemed to make it perform worse so I left it out. 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 76). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ####3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 169).  10 epochs seem to do well for this model.  Bumping the side image steering angle by 0.25 seemed to do well.
 
 ####4. Appropriate training data
 
