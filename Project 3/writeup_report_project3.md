@@ -119,15 +119,16 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 ![Recover from left](./images/recover_left1.jpg)
 ![Recover from left](./images/recover_left2.jpg)
+![Recover from left](./images/recover_left25.jpg)
 ![Recover from left](./images/recover_left3.jpg)
 
 
-Then I repeated this process on track two in order to get more data points.
+Then I repeated this process for the first curve, dirt corner, and right hand curve.
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would balance the data to get less of a bias because of training on mostly left hand turns. For example, here is an image that has then been flipped:
 
-![alt text][image6]
-![alt text][image7]
+![Left flip](./images/flip_left.JPG)
+![Left flip](./images/flip_right.JPG)
 
 Etc ....
 
