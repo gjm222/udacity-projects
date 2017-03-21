@@ -117,10 +117,10 @@ To get good driving behavior, I used the data.zip data supplied by the class. Lo
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to get the right steering angle if positioned to run off the road. These images show what a recovery looks like starting from left to right :
 
-![Recover from right](./images/recover_left.jpg)
-![Recover from left](./images/recover_right.jpg)
-![alt text][image4]
-![alt text][image5]
+![Recover from left](./images/recover_left1.jpg)
+![Recover from left](./images/recover_left2.jpg)
+![Recover from left](./images/recover_left3.jpg)
+
 
 Then I repeated this process on track two in order to get more data points.
 
