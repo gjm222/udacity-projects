@@ -9,7 +9,7 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-![Loss](./images/MSELossChart.JPG)
+
 
 [//]: # (Image References)
 
@@ -59,13 +59,16 @@ I tried dropout layers in order to reduce overfitting but it only seemed to make
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 76). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
+Looking at the traing vs validation loss the model did not show it was overfitting.
+![Loss](./images/MSELossChart.JPG)
+
 ####3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 169).  10 epochs seem to do well for this model.  Bumping the side image steering angle by 0.25 seemed to do well.
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 169).  10 epochs seem to do well for this model.  Bumping the side image steering angle by +-0.25 seemed to do well.
 
 ####4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road. Also did extra training around the curves (with some extra training for the right hand curve), bridge, and the dirt road corner just after the bridge.  I also used the left and right cameras with a bump to the steering angle to help recovery. 
 
 For details about how I created the training data, see the next section. 
 
@@ -75,15 +78,10 @@ For details about how I created the training data, see the next section.
 
 The overall strategy for deriving a model architecture was to ...
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+My first step was to use a convolution neural network model similar to the NVDIA model. I thought this model might be appropriate because it was recommended by David Silver in the youtube video.  Also, it was said that this model performs especially well for driving applications.
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I tried a very basic model with just the pre-packaged data (data.zip) at first and ran it on the simulater and it did terrible.  I kept adding more training data but it still did not help so I tried the suggested NVDIA model which did much better so now I had a base to work from.
+There were a few spots where the vehicle fell off the track on the bridge, the dirt corner, and the right hand curve. To improve the driving behavior in these cases, I trained more data on those specific areas which resolved many of the issues.  It seemed though, that when I would train to fix one area (for example on the right hand curve) it would "break" another area (like the bridge).  Through trial and error I finally found a combination of data that worked.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
