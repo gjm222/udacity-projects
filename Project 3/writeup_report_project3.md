@@ -115,9 +115,10 @@ To get good driving behavior, I used the data.zip data supplied by the class. Lo
 
 ![Center](./images/center.jpg)
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to get the right steering angle if positioned to run off the road. These images show what a recovery looks like starting from left to right :
 
-![alt text][image3]
+![Recover from right](./images/recover_left.jpg)
+![Recover from left](./images/recover_right.jpg)
 ![alt text][image4]
 ![alt text][image5]
 
