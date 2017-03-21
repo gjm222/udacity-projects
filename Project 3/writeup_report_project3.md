@@ -130,11 +130,10 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 ![Left flip](./images/flip_left.JPG)
 ![Left flip](./images/flip_right.JPG)
 
-Etc ....
 
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+After the collection process, I had 45,939 number of data points. I then attempted to preprocess the data by blurring the image but seemed to have bad effects on my model so I did not use it.  The top 70 and bottom 25 pixels are cropped to simplify the image for training on only data that is necessary.  The images were also normalized and shifted around zero for improved calculations by the model.
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 10 as evidenced by trial and error (See MSE loss graph above).  I used an adam optimizer so that manually training the learning rate wasn't necessary.
